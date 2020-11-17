@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fertifa Chat </title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="./plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/adminlte.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/chat.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+
+<div class="row chat">
+    <!--<div class="header"></div>-->
+    <div class="col-3 chat-sidebar">
+        <ul class="list-unstyled contacts">
+            <li class="userListItem">
+                <span class="contacts-item"></span>
+                <span class="image"></span>
+                <div class="vcentered info-combo">
+                    <h3 class="no-margin-bottom name full-name"> John Doe </h3>
+                    <h5 class="company-name"> Company Name </h5>
+                </div>
+                <div class="contacts-add">
+                    <span class="message-time chat-date"> 3:56 <sup>AM</sup></span>
+                    <div class="message-count"> 1</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="col-9 message-place">
+        <div class="select-chat">
+            <h6>Please select a chat to start messaging</h6>
+        </div>
+    </div>
+</div>
+<script>
+    var users_json_data = JSON.parse('${userObjectList}');
+</script>
+<!-- jQuery -->
+<script src="./js/jquery.min.js"></script>
+<script src="./js/socket.io.js"></script>
+<!-- Bootstrap 4 -->
+<script src="./js/bootstrap.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="./plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="./js/adminlte.min.js"></script>
+<script src="js/axios.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="./js/demo.js"></script>
+<script src="./js/sessions.js"></script>
+<script src="./js/chat.js"></script>
+<!-- <script src="./js/messages.js"></script> -->
+</body>
+</html>

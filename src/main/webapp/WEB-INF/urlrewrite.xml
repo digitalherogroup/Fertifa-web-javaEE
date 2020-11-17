@@ -1,0 +1,10 @@
+<urlrewrite>
+    <rule>
+        <note>
+            The rule means that requests to /test/status/ will be redirected to /rewrite-status the url will be rewritten.
+        </note>
+        <from>/admin/(.*)$</from>
+        <to type="request">%{context-path}/admin/$1</to>
+    </rule>
+
+</urlrewrite>
